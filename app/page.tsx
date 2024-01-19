@@ -1,9 +1,7 @@
-
-//20:57 using CSS for text
 "use client";
 
 import { useState, FormEvent } from "react";
-import {useRouter} from 'next/navigation'
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const [inputValue, setInputValue] = useState("");
