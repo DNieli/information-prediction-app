@@ -29,11 +29,23 @@ export default async function Page({ params }: Params) {
   ]);
 
   return (
-    <div>
-        <div> Personal Info </div>
-        <div> Age: {age?.age} </div>
-        <div> Gender: {gender?.gender} </div>
-        <div> Nationality: {country?.country[0]?.country_id} </div>
+    <div className="min-h-screen flex items-center justify-center bg-blue-600">
+      <div className="m-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-3 px-8 py-4 md:px-24">
+        <div className="p-8">
+          <div className="uppercase tracking-wide text-md text-blue-600 font-semibold">
+            Personal Info
+          </div>
+          <div className="block mt-1 text-xl leading-tight font-medium text-black">
+            Age: {age?.age}
+          </div>
+          <div className="block mt-1 text-xl leading-tight font-medium text-black">
+            Gender: {gender?.gender}
+          </div>
+          <div className="block mt-1 text-xl leading-tight font-medium text-black">
+            Nationality: {country?.country[0]?.country_id}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
