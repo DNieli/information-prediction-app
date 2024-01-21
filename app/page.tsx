@@ -14,9 +14,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-blue-600">
-      <h1 className="text-white text-3xl text-center font-bold mb-16 px-16 md:text-5xl px-24">Type a name to predict a person&apos;s age, gender and nationality</h1>
+      <h1 className="text-white text-3xl text-center font-bold mb-16 px-16 md:text-5xl px-24">
+        Type a name to predict a person&apos;s age, gender and nationality
+      </h1>
       <div className="p-4 shadow-md bg-white rounded-md w-5/6 md:w-1/2 lg:w-1/3">
-        <h2 className="text-xl font-semibold text-black mb-4 md:text-2xl">Enter your name:</h2>
+        <h2 className="text-xl font-semibold text-black mb-4 md:text-2xl">
+          Enter your name:
+        </h2>
         <form onSubmit={handleSubmit} className="space-y-3">
           <input
             type="text"
@@ -33,7 +37,7 @@ export default function Home() {
             Predict Data
           </button>
         </form>
-        </div>
+      </div>
     </div>
   );
 }
